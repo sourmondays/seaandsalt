@@ -16,7 +16,6 @@ html {
 }
 
 /* Nav start */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -69,7 +68,7 @@ nav {
 /* Tablet view */
 @media screen and (max-width: 1024px) {
   .nav-links {
-    width: 60%;
+    width: 50%;
   }
 }
 

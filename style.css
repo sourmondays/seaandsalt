@@ -1,0 +1,173 @@
+/* Styling settings for website */
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --logo-font: "Rakkas", cursive, serif;
+}
+
+/* Nav start */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  min-height: 10vh;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: rgb(10, 10, 10);
+  font-family: var(--logo-font);
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  background-color: black;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes linksOpacity {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .burger1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .burger2 {
+  opacity: 0;
+}
+
+.toggle .burger3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Nav ends */
+
+.text {
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  font-family: var(--logo-font);
+  font-size: 4rem;
+  text-align: center;
+  color: #0d0d0e;
+}
+
+.header {
+  background-color: #3f789b;
+  padding: 10rem;
+}
+
+.article {
+  background-color: #121416;
+  color: whitesmoke;
+  padding: 4rem;
+}
+
+.article p,
+h2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.footer p {
+  text-transform: uppercase;
+  font-family: var(--logo-font);
+  text-align: center;
+}

@@ -537,6 +537,11 @@ input[type="submit"]:hover {
   .grid-container .img-wrap-contact:nth-of-type(1) {
     order: 2;
   }
+
+  /* Thank you page */
+  .thanks {
+    padding-top: 6rem;
+  }
 }
 
 /* Only displayed in mobile view */
@@ -563,5 +568,9 @@ input[type="submit"]:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 5rem;
+  }
+
+  .thanks {
+    padding-top: 4rem;
   }
 }

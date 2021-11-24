@@ -26,20 +26,24 @@ const navTransform = () => {
 navTransform();
 
 //Parallax
-let clouds = document.querySelector(".clouds");
-let sun = document.querySelector(".sun");
-let mountain_back = document.querySelector(".mountain_back");
-let header_text = document.querySelector(".header_text");
-let front = document.querySelector(".front");
-let fishes = document.querySelector(".fishes");
+const parallaxAnimations = () => {
+  let clouds = document.querySelector(".clouds");
+  let sun = document.querySelector(".sun");
+  let mountain_back = document.querySelector(".mountain_back");
+  let header_text = document.querySelector(".header_text");
+  let front = document.querySelector(".front");
+  let fishes = document.querySelector(".fishes");
 
-//Scroll animations
-window.addEventListener("scroll", function () {
-  let value = window.scrollY;
-  clouds.style.left = value * 0.25 + "px";
-  sun.style.top = value * 1.05 + "px";
-  mountain_back.style.top = value * 0.4 + "px";
-  front.style.top = value * 0 + "px";
-  header_text.style.marginLeft = value * 4 + "px";
-  fishes.style.marginLeft = value * -0.2 + "px";
-});
+  //Scroll animations
+  window.addEventListener("scroll", function () {
+    let value = window.scrollY;
+    clouds.style.left = value * 0.25 + "px";
+    sun.style.top = value * 1.05 + "px";
+    mountain_back.style.top = value * 0.4 + "px";
+    front.style.top = value * 0 + "px";
+    header_text.style.marginLeft = value * 4 + "px";
+    fishes.style.marginLeft = value * -0.2 + "px";
+  });
+};
+
+parallaxAnimations();

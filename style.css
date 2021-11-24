@@ -214,7 +214,6 @@ header img.fishes {
   font-weight: 200;
   color: whitesmoke;
   margin-bottom: 2rem;
-  line-height: 1;
 }
 
 .menu-button {
@@ -241,7 +240,7 @@ header img.fishes {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .img-wrap,
@@ -255,7 +254,7 @@ header img.fishes {
 .img-wrap img,
 .img-wrap-two img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   height: 100%;
   object-fit: cover;
   display: block;
@@ -346,23 +345,21 @@ header img.fishes {
   text-align: center;
 }
 
-/* Ipad view */
-@media screen and (max-width: 768px) {
-}
-
-/* Mobile view */
-@media screen and (max-width: 768px) {
+/* Tablet view */
+@media screen and (max-width: 1024px) {
   /* Hide parallax header */
   header {
     display: none;
   }
 
+  /* Full-width image only displayed in tablet and mobile */
   .mobile-full-width-image {
     display: block;
   }
 
+  /* Padding for text in article */
   .centered {
-    padding: 1.5rem;
+    padding: 6rem;
   }
 
   /* Reverse order of CSS grid */
@@ -374,9 +371,6 @@ header img.fishes {
     order: 2;
   }
 
-  .grid-container .img-wrap:nth-of-type(2) {
-    order: 1;
-  }
   /* End reverse order of CSS grid */
 
   /* Mobile style for wrapper-one */
@@ -397,7 +391,7 @@ header img.fishes {
     margin-top: 4rem;
   }
 
-  /* Mobile style for wrapper-one */
+  /* Tablet/mobile style for wrapper-one */
 
   /* Mobile image sizing */
   .full-width-image,
@@ -419,10 +413,17 @@ header img.fishes {
     order: 2;
   }
 
-  /* End mobile style for wrapper-two */
+  /* End tablet/mobile style for wrapper-two */
+}
 
+/* Only displayed in mobile view */
+@media screen and (max-width: 768px) {
   .loacation-text {
     font-size: 2rem;
+  }
+
+  .centered {
+    padding: 2rem;
   }
 
   .parallax-wrapper .des-text {

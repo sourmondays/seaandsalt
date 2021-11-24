@@ -37,10 +37,14 @@ nav {
 
 .logo {
   text-transform: uppercase;
-  color: whitesmoke;
   font-family: var(--logo-font);
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .nav-links {
@@ -72,13 +76,6 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
-
-/* Tablet view */
-/* @media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 50%;
-  }
-} */
 
 /* Mobile view */
 @media screen and (max-width: 1024px) {
@@ -225,7 +222,7 @@ header img.fishes {
   text-align: center;
   display: inline-block;
   font-family: var(--flow-text);
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -244,7 +241,8 @@ header img.fishes {
 }
 
 .img-wrap,
-.img-wrap-two {
+.img-wrap-two,
+.img-wrap-contact {
   overflow: hidden;
   height: 0;
   padding: 55% 0;
@@ -252,7 +250,8 @@ header img.fishes {
 }
 
 .img-wrap img,
-.img-wrap-two img {
+.img-wrap-two img,
+.img-wrap-contact img {
   width: 100%;
   /* height: auto; */
   height: 100%;
@@ -266,11 +265,15 @@ header img.fishes {
 /* Grid placement and size end */
 
 /* Wrapper one start */
-.wrapper-one {
+.wrapper-one,
+.wrapper-contact,
+.wrapper-two {
   padding: 6rem;
 }
 
-.wrap-1 {
+.wrap-1,
+.wrapper-two,
+.wrapper-contact {
   padding-right: 6rem;
 }
 
@@ -294,13 +297,10 @@ header img.fishes {
 /* Wrapper one end */
 
 /* Wrapper two start */
-.wrapper-two {
-  padding: 6rem;
-}
-
 .wrap-two-1 {
   padding-left: 6rem;
 }
+
 /* Wrapper two end */
 
 /* Cover image */
@@ -344,6 +344,92 @@ header img.fishes {
   font-family: var(--logo-font);
   text-align: center;
 }
+
+/* Style for menu page */
+
+.menu {
+  background-color: rgb(216, 60, 60);
+  font-family: var(--text-font);
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.menu-text {
+  font-size: 3rem;
+}
+
+.ul-list {
+  list-style-type: none;
+}
+
+.menu-headers {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.food-options {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.price {
+  margin-bottom: 1rem;
+}
+
+/* End style for menu page */
+
+/* Style for contact page */
+
+input[type="text"],
+select,
+textarea {
+  font-family: var(--text-font);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  font-family: var(--text-font);
+  font-size: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 32px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(34, 34, 34);
+  color: whitesmoke;
+}
+
+.form-container {
+  font-family: var(--text-font);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.contact-us {
+  text-align: center;
+  font-family: var(--text-font);
+  padding-top: 10%;
+  font-size: 3rem;
+}
+
+.wrap-form {
+  padding-left: 2rem;
+}
+
+/* End style for contact page */
 
 /* Tablet view */
 @media screen and (max-width: 1024px) {
@@ -414,6 +500,25 @@ header img.fishes {
   }
 
   /* End tablet/mobile style for wrapper-two */
+
+  /* Menu page */
+  .menu {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  /* Contact page */
+  .wrapper-contact {
+    padding: 0rem;
+  }
+
+  .wrap-form {
+    padding-left: 0rem;
+  }
+
+  .form-container {
+    padding: 2rem;
+  }
 }
 
 /* Only displayed in mobile view */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Sea & salt</title>
+  </head>
+  <body>
+    <!--Navigation/hamburger menu-->
+    <nav>
+      <div class="logo">
+        <a href="/"><p>Sea & salt</p></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="burger1"></div>
+        <div class="burger2"></div>
+        <div class="burger3"></div>
+      </div>
+    </nav>
+
+    <!--Grid for contact form and image-->
+    <section class="wrapper-contact">
+      <div class="grid-container">
+        <div class="img-wrap-contact">
+          <img
+            src="./assets/imagesFood/mae-mu-IHFa5s6xaRE-unsplash.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="wrap-form">
+          <h1 class="contact-us">Contact us</h1>
+          <div class="form-container">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" />
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer"><p>©Sea & salt</p></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

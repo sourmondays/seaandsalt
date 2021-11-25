@@ -77,7 +77,7 @@ nav {
 }
 
 /* Mobile and tablet view */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -489,7 +489,7 @@ textarea {
 /* End style for contact and thanks page */
 
 /* Tablet view */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   /* Hide parallax header */
   header {
     display: none;
@@ -545,6 +545,7 @@ textarea {
   .mobile-full-width-image {
     height: 100%;
   }
+
   /* End mobile image sizing */
 
   /* Mobile style for wrapper-two */

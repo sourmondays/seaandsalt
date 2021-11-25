@@ -413,7 +413,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+.submit[type="submit"] {
   font-family: var(--text-font);
   font-size: 1rem;
   background-color: black;
@@ -424,7 +424,7 @@ input[type="submit"] {
   width: 100%;
 }
 
-input[type="submit"]:hover {
+.submit[type="submit"]:hover {
   background-color: #222222;
   border: 2px solid #222222;
   color: whitesmoke;

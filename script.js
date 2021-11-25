@@ -47,3 +47,5 @@ const parallaxAnimations = () => {
 };
 
 parallaxAnimations();
+
+AOS.init();

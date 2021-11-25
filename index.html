@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/imagesParallax/fav_logo.png"
+    />
     <title>Sea & salt</title>
   </head>
   <body>
@@ -30,6 +35,7 @@
     <section class="mobile-full-width-image">
       <img
         src="./assets/imagesParallax/seaandsaltcover.png"
+        title="Cover"
         alt="Cover with mountains, sun, plants and fishes."
       />
     </section>
@@ -39,28 +45,33 @@
       <img
         class="background"
         src="./assets/imagesParallax/background_one.png"
+        title="Cover paper"
         alt="Textured paper."
       />
       <img
         class="clouds"
         src="./assets/imagesParallax/clouds.png"
-        alt="Clouds."
+        title="Clouds"
+        alt="Animated clouds."
       />
       <img class="sun" src="./assets/imagesParallax/sun.png" alt="Sun." />
       <img
         class="mountain_back"
         src="./assets/imagesParallax/mountain_back.png"
-        alt="Mountain behind behind other mountains."
+        title="Mountain"
+        alt="Animated mountain behind behind other mountains."
       />
       <img
         class="fishes"
         src="./assets/imagesParallax/fishes.png"
-        alt="Fishes."
+        title="Fishes"
+        alt="Animated fishes."
       />
       <h1 class="header_text">Sea & salt</h1>
       <img
         class="front"
         src="./assets/imagesParallax/front.png"
+        title="Front cover"
         alt="Mountains, waves and plants."
       />
     </header>
@@ -86,9 +97,10 @@
           </div>
         </div>
 
-        <div class="img-wrap">
+        <div class="img-wrap" data-aos="fade-up" data-aos-duration="3000">
           <img
             src="./assets/imagesFood/ratapan-anantawat-VItYKuJ0Mng-unsplash.jpg"
+            title="Seafood"
             alt="Wooden table with seafood."
           />
         </div>
@@ -99,16 +111,18 @@
     <section class="full-width-image">
       <img
         src="./assets/imagesFood/mike-bergmann-tHjXXy1kk_Q-unsplash.jpg"
-        alt="Tropical fishes/seafood on ice."
+        title="Seafood"
+        alt="Tropical fishes on ice."
       />
     </section>
 
     <!--Article two with text and image-->
     <article class="wrapper-two">
       <div class="grid-container">
-        <div class="img-wrap-two">
+        <div class="img-wrap-two" data-aos="fade-up" data-aos-duration="3000">
           <img
             src="./assets/imagesFood/pexels-cottonbro-33385281.jpg"
+            title="Salmon"
             alt="Chef holding a medium sized salmon."
           />
         </div>
@@ -139,6 +153,7 @@
     <!--Footer-->
     <footer class="footer"><p>©Sea & salt</p></footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -189,7 +189,7 @@ header img.fishes {
 
 .header_text {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   font-family: var(--logo-font);
   text-transform: uppercase;
   font-size: 6rem;
@@ -534,9 +534,9 @@ textarea {
     margin-top: 4rem;
   }
 
-  /* .mobile-full-width-image img {
+  .mobile-full-width-image img {
     margin-top: 8vh;
-  } */
+  }
 
   /* Tablet/mobile style for wrapper-one */
 
